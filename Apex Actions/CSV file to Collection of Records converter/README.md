@@ -2,6 +2,8 @@
 
 Use this Apex action in screen flows to directly convert a CSV file into a collection of records.
 
+Stay tuned for the blog for a more descriptive explanation.
+
 ## Usage Considerations:
 1. Make sure to use Field API names in your CSV file header, instead of field labels.
 2. Make sure not to put any NULL values in the last column of CSV.
