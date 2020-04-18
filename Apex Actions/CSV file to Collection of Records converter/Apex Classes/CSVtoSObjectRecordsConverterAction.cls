@@ -31,7 +31,6 @@ public class CSVtoSObjectRecordsConverterAction {
         String[] csvRows = csvStringContent.split('\n');
         String[] fields = csvRows[0].split(','); //Gives all the API names of the fields from the 1st CSV row
         csvRows.remove(0);
-        Integer fieldsListSize = fields.size();
         map<String,Schema.DisplayType> fieldToFieldTypeMap = new map<String,Schema.DisplayType>();
         for (String field : fields) {
             fieldToFieldTypeMap.put(field, getFieldType(fieldMap, field));
@@ -44,7 +43,7 @@ public class CSVtoSObjectRecordsConverterAction {
             SObject obj = sObjType.newSObject();
             String[] fieldInputValues = row.split(',');
             
-            for (Integer i = 0; i < fieldsListSize; i++) {
+            for (Integer i = 0; i < fields.size(); i++) {
                 String fieldValue = fieldInputValues[i];
                 Schema.DisplayType fieldType = fieldToFieldTypeMap.get(fields[i]);
                 obj.put( fields[i], getConvertedFieldValue(fieldType, fieldValue));
@@ -84,13 +83,13 @@ public class CSVtoSObjectRecordsConverterAction {
                 convertedfieldValue = String.isEmpty(fieldValue) ? false : Boolean.valueOf(fieldValue);
             }
             when DOUBLE {
-                convertedfieldValue = convertStringToDecimal(fieldValue);
+                convertedfieldValue = String.isEmpty(fieldValue) ? null : Decimal.valueOf(fieldValue);
             }
             when CURRENCY {
-                convertedfieldValue = convertStringToDecimal(fieldValue);
+                convertedfieldValue = String.isEmpty(fieldValue) ? null : Decimal.valueOf(fieldValue);
             }
             when INTEGER {
-                convertedfieldValue = convertStringToInteger(fieldValue);
+                convertedfieldValue = String.isEmpty(fieldValue) ? null : Integer.valueOf(fieldValue);
             }
             when else { 
                 convertedfieldValue = fieldValue;
@@ -105,13 +104,5 @@ public class CSVtoSObjectRecordsConverterAction {
             throw new FlowCustomException('Invalid Field Error: '+fieldApiName + '. Please double check the API name of the field.');
         }
         return fieldMap.get(fieldApiName).getDescribe().getType();
-    }
-
-    static Double convertStringToDecimal(String value){
-        return String.isEmpty(value) ? null : Decimal.valueOf(value);
-    }
-
-    static Integer convertStringToInteger(String value){
-        return String.isEmpty(value) ? null : Integer.valueOf(value);
     }
 }
