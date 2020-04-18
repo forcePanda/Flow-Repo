@@ -1,4 +1,4 @@
-# CSV file to Collection of records Converter
+# CSV file to Collection of records Converter Apex Action
 
 Use this Apex action in screen flows to directly convert a CSV file into a collection of records.
 

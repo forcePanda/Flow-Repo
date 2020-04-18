@@ -1,0 +1,27 @@
+<aura:component controller="PicklistCMPController" implements="lightning:availableForFlowScreens,flexipage:availableForAllPageTypes,lightning:utilityItem">
+    
+    <aura:attribute name="picklistValues" type="List" />
+    
+    <aura:attribute name="picklistLabel" type="String" />
+    <aura:attribute name="objectApiName" type="String" />
+    <aura:attribute name="fieldApiName" type="String" />
+    
+    <aura:attribute name="selectedValue" type="String" />
+    <aura:attribute name="defaultValue" type="String" />
+    
+    <aura:attribute name="showSpinner" type="boolean" default="false"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}" />
+    
+    <div class="slds-p-around_small slds-is-relative">
+        <!-- Spinner -->
+        <aura:if isTrue="{!v.showSpinner}">
+            <lightning:spinner variant="brand" alternativeText="Loading" />
+        </aura:if>
+        
+        <lightning:combobox name="{! v.picklistLabel }" label="{! v.picklistLabel }" 
+                            value="{!v.selectedValue}" options="{! v.picklistValues }" 
+                            onchange="{! c.handleChange }"/>
+    </div>
+    
+</aura:component>

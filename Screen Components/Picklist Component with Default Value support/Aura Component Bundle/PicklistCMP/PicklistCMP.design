@@ -1,0 +1,9 @@
+<design:component>
+    
+    <design:attribute name="objectApiName" label="Enter API name of the object" required="true" />
+    <design:attribute name="fieldApiName" label="Enter API name of the field" required="true" />
+    <design:attribute name="picklistLabel" label="Enter Label" required="true" />
+    <design:attribute name="defaultValue" label="Default value" />
+	<design:attribute name="selectedValue" label="Selected value" />
+    
+</design:component>
