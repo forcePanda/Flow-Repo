@@ -15,6 +15,6 @@ Stay tuned for the blog for a more descriptive explanation.
 - Add time stamp to the file name? : When true, the name of the file will automatically appended by the current date and time.
 
 ### Flow Action Output:
-- Text type collection of all the uploaded CSV files.
+- ContentDocument ID for the uploaded CSV file.
 
 To use this flow Apex action, install this unmanaged package: https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000003zHeH
