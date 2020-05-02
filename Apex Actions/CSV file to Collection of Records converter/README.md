@@ -10,7 +10,7 @@ Stay tuned for the blog for a more descriptive explanation.
 
 ### Flow Action Inputs:
 - Object API Name
-- ContentDocumentId
+- ContentDocumentId (Id of the CSV file) 
 
 ### Flow Action Output:
 - SObject Collection
