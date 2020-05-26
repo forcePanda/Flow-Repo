@@ -1,8 +1,7 @@
 # CSV file to Collection of records Converter Apex Action
 
 Use this Apex action in screen flows to directly convert a CSV file into a collection of records.
-
-Stay tuned for the blog for a more descriptive explanation.
+For some more details, you can follow up with this post: https://forcepanda.wordpress.com/2020/05/05/convert-csv-file-into-record-collection-in-flows/
 
 ## Usage Considerations:
 1. Make sure to use Field API names in your CSV file header, instead of field labels.
