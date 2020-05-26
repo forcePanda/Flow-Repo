@@ -9,7 +9,7 @@ For some more details, you can follow up with this post: https://forcepanda.word
 
 ### Flow Action Inputs:
 - Object API Name
-- ContentDocumentId
+- ContentDocumentId (Id of the CSV file) 
 
 ### Flow Action Output:
 - SObject Collection
