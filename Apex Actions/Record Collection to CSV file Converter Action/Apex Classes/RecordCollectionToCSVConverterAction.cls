@@ -1,4 +1,4 @@
-public class RecordCollectionToCSVConverterAction {
+public with sharing class RecordCollectionToCSVConverterAction {
 
     public class FlowActionInput {
         @InvocableVariable(label='Object API Name' required = true)
@@ -64,10 +64,9 @@ public class RecordCollectionToCSVConverterAction {
             for(Integer j = 0; j <intFieldListSize; j++) {
                 String fieldApiName = lstFieldApiNames[j];
                 Object fieldValue = obj.get(fieldApiName);
-                
-                if(fieldValue != NULL && fieldValue Instanceof String) {
-                    csvStringContent = csvStringContent+ ((String)fieldValue).escapeCsv();
-                }else {
+                if(fieldValue != NULL) {
+                    csvStringContent = csvStringContent + String.valueOf(fieldValue).escapeCsv();
+                } else {
                     csvStringContent = csvStringContent +'';
                 }
                 if( j < intFieldListSize-1 ) {
@@ -78,7 +77,6 @@ public class RecordCollectionToCSVConverterAction {
                 csvStringContent += '\n';
             }
         }
-        
         return Blob.valueOf(csvStringContent);
     }
 
@@ -96,9 +94,7 @@ public class RecordCollectionToCSVConverterAction {
             Schema.DescribeFieldResult fieldDescription = field.getDescribe();
             mapfieldApiNameToLabel.put(fieldDescription.getName(), fieldDescription.getLabel());
         }
-
-        return mapfieldApiNameToLabel;
+		return mapfieldApiNameToLabel;
     }
     
 }
-
