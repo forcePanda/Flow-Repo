@@ -64,8 +64,7 @@ public class RecordCollectionToCSVConverterAction {
             for(Integer j = 0; j <intFieldListSize; j++) {
                 String fieldApiName = lstFieldApiNames[j];
                 Object fieldValue = obj.get(fieldApiName);
-                System.debug(fieldApiName);
-                System.debug(fieldValue);
+                
                 if(fieldValue != NULL && fieldValue Instanceof String) {
                     csvStringContent = csvStringContent+ ((String)fieldValue).escapeCsv();
                 }else {
@@ -78,9 +77,8 @@ public class RecordCollectionToCSVConverterAction {
             if( i < intRecordListSize-1 ) {
                 csvStringContent += '\n';
             }
-            System.debug(csvStringContent);
         }
-        System.debug(csvStringContent);
+        
         return Blob.valueOf(csvStringContent);
     }
 
