@@ -95,6 +95,5 @@ public with sharing class RecordCollectionToCSVConverterAction {
             mapfieldApiNameToLabel.put(fieldDescription.getName(), fieldDescription.getLabel());
         }
 		return mapfieldApiNameToLabel;
-    }
-    
+    }   
 }
