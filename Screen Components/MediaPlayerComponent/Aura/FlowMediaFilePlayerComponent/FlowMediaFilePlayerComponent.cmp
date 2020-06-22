@@ -1,0 +1,21 @@
+<aura:component implements="lightning:availableForFlowScreens">
+    
+    <aura:attribute name="fileId" type="String" />
+    <aura:attribute name="type" type="String" />
+    <aura:attribute name="height" type="String" />
+    <aura:attribute name="width" type="String" />
+    
+    <aura:attribute name="baseURL" type="String" default="/sfc/servlet.shepherd/document/download/"/>
+
+    <aura:if isTrue="{! v.type == 'video'}">
+        <video height="{!v.height}" width="{!v.width}" controls="controls">
+            <source src="{!v.baseURL + v.fileId}" type="video/mp4" /><!--NOTE: The file extension is hardcoded as MP4 here.-->
+        </video>
+        <aura:set attribute="else">
+            <audio controls="controls">
+                <source src="{!v.baseURL + v.fileId}" type="audio/mpeg"/><!--NOTE: The file extension is hardcoded as MPEG here.-->
+            </audio>
+        </aura:set>
+    </aura:if>
+    
+</aura:component>
