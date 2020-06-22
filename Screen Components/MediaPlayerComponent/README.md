@@ -11,4 +11,4 @@ This component can be used in the flow screens to preview/play audio and video t
 
 For more details about the component, refer this blog post: <TODO: Add the blogpost link>
 
-To use this component, install this unmanaged package: <TODO: Add package link>
+To use this component, install this unmanaged package: https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000003zIEq
