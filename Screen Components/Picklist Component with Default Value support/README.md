@@ -3,6 +3,5 @@ Since the standard picklist flow screen doesn't support setting the default valu
 
 For more details about the component, refer this blog post: <TODO: Add the blogpost link>
 
-
-To use this component, install this unmanaged package: https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000000cfOx
+Use the following link to install this unmanaged package: https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000000cfOx
 
