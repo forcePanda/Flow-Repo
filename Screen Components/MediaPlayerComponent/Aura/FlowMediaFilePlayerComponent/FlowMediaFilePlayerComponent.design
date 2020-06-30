@@ -1,0 +1,6 @@
+<design:component >
+    <design:attribute name="fileId" label="Content Document ID" required="true" />
+    <design:attribute name="type" label="Media Type" description="Allowed values: 'audio' and 'video'" required="true"/>
+    <design:attribute name="height" label="Height" default="250"  />
+    <design:attribute name="width" label="Width" default="250" />
+</design:component>
