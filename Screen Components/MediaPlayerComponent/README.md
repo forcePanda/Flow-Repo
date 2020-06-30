@@ -9,6 +9,6 @@ This component can be used in the flow screens to preview/play audio and video t
 |Height| ✔ | | Height of the video frame in pixels |
 |Width| ✔ | | Width of the video frame in pixels |
 
-For more details about the component, refer this blog post: <TODO: Add the blogpost link>
+Refer this post for more: https://forcepanda.wordpress.com/2020/06/30/play-video-and-audio-type-salesforce-files-in-flows-screens/
 
 To use this component, install this unmanaged package: https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000003zIEq
