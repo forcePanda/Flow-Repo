@@ -1,5 +1,5 @@
 # File Preview Component
-Use this simple component to preview files on your flow screens.
+Use this component to preview files on your flow screens.
 
 Related blog post link: <TODO>
 
