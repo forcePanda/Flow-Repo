@@ -13,12 +13,12 @@
     
     <aura:handler name="init" value="{!this}" action="{!c.init}" />
     
-    <div class="slds-p-around_small slds-is-relative">
+    <div class="slds-form-element slds-is-relative" style="max-width: 700px;">
         <!-- Spinner -->
         <aura:if isTrue="{!v.showSpinner}">
             <lightning:spinner variant="brand" alternativeText="Loading" />
         </aura:if>
-        
+                
         <lightning:combobox name="{! v.picklistLabel }" label="{! v.picklistLabel }" 
                             value="{!v.selectedValue}" options="{! v.picklistValues }" 
                             onchange="{! c.handleChange }"/>
