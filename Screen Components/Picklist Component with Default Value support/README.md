@@ -15,9 +15,8 @@ For more details about the component, refer this blog post: https://forcepanda.w
 
 Use the following link(s) to install the unmanaged package: 
 
-|Version	               |Fixes	   |Package Link	    
+| Version | Fixes |Package Link	    
 |-|-|-|
-
 | v2 | Added alignment fix | https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000000cfP2 |
 | v1 | | https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000000cfOx |
 
