@@ -9,8 +9,7 @@ A flow action that enables you to call subflows(autolaunched type flows) from fl
 ✔
 | Flow API Name | ✔ |  | API name of the flow. |
 | Flow Namespace | ✔ |  | Namespace of the flow. Leave the input blank if the flow does not have a namespace. | 
-| JSON of Input Variables | ✔ |  | JSON string of flow input variables and their corresponding values.
-Ex: If your flow has two input variables; varText(text type) and varNumber(number type), then the JSON should look like this.
+| JSON of Input Variables | ✔ |  | JSON string of flow input variables and their corresponding values. <br>Ex: If your flow has two input variables; varText(text type) and varNumber(number type), then the JSON should look like this.
 {
     "varText" : "Text Input",
     "varNumber" : 3000
