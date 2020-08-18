@@ -11,9 +11,11 @@ A flow action that enables you to call subflows(autolaunched type flows) from fl
 | Flow Namespace | ✔ |  | Namespace of the flow. Leave the input blank if the flow does not have a namespace. | 
 | JSON of Input Variables | ✔ |  | JSON string of flow input variables and their corresponding values. <br>Ex: If your flow has two input variables; varText(text type) and varNumber(number type), then the JSON should look like this.<br>{<br>    "varText" : "Text Input",<br>    "varNumber" : 3000<br>}<br>Store the JSON string in a variable using a Text type variable or a Text Template(with View as Plain Text) and pass that variable in the action input. |
 
+
 For more details about the component, refer this blog post: <Blogpost link>
 
 Use the following link(s) to install the unmanaged package: 
 
-| Version | Fixes |Package Link	    
+| Version | Fixes |Package Link
+|-|-|-|	    
 | 1.0 |  | https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000004161y |
