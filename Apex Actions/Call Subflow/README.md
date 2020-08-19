@@ -11,7 +11,7 @@ A flow action that enables you to call subflows(autolaunched type flows) from fl
 | JSON of Input Variables | ✔ |  | JSON string of flow input variables and their corresponding values. <br>Ex: If your flow has two input variables; varText(text type) and varNumber(number type), then the JSON should look like this.<br>{<br>    "varText" : "Text Input",<br>    "varNumber" : 3000<br>}<br>Store the JSON string in a variable using a Text type variable or a Text Template(with View as Plain Text) and pass that variable in the action input. |
 
 
-For more details about the component, refer this blog post: <Blogpost link>
+For more details about the component, refer this blog post: https://forcepanda.wordpress.com/2020/08/19/flow-action-call-subflow/
 
 Use the following link(s) to install the unmanaged package: 
 
