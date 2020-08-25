@@ -10,7 +10,7 @@ Apex action that allows users to create ContentVersion(Files).
 | Related Record Id | ✔ | | ID of the record where the file should be added. |
 | ContentDocument ID | | ✔ | ContentDocument ID of the created file(ContentVersion). |
 
-For more details about the component, refer this blog post: <Blogpost link>
+For more details about the component, refer this blog post: https://forcepanda.wordpress.com/2020/08/25/flow-apex-action-create-contentversion-files/
 
 Use the following link(s) to install the unmanaged package: 
 
