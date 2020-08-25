@@ -14,5 +14,6 @@ For more details about the component, refer this blog post: <Blogpost link>
 
 Use the following link(s) to install the unmanaged package: 
 
-| Version | Fixes |Package Link	    
- 1.0 | | https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000004165C |
+| Version | Fixes |Package Link	 
+|-|-|-|
+| 1.0 | | https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000004165C |
