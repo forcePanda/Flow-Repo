@@ -11,5 +11,6 @@ Use this component to display images via URL on your flow screens.
 
 Related blog post link: <>
 
-| Version | Fixes |Package Link	    
+| Version | Fixes |Package Link
+|-|-|-|  
 | V 1.0 | | https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000001ZLV6 |
