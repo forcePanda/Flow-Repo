@@ -1,0 +1,8 @@
+<design:component >
+
+    <design:attribute name="url" label="Image URL"/>
+    <design:attribute name="height" label="Height"/>
+    <design:attribute name="width" label="Width"/>
+    <design:attribute name="align" label="Align" description="Values: left, right or center"/>
+
+</design:component>

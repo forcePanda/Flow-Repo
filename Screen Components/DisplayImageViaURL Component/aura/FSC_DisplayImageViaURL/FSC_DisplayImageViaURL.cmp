@@ -1,0 +1,22 @@
+<aura:component implements="lightning:availableForFlowScreens">
+
+    <aura:attribute name="url" type="String"/>
+    <aura:attribute name="height" type="String"/>
+    <aura:attribute name="width" type="String"/>
+    <aura:attribute name="align" type="String"/>
+
+    
+    <div 
+        class="{! v.align == 'center' ? 'slds-align_absolute-center' : ''}" 
+        style="{! v.align != 'center' ? 'float : ' + v.align : ''}"
+    >   
+        <aura:if isTrue="{! not(empty(v.url))}">
+            <img src="{!v.url}" height="{!v.height}" width="{!v.width}"/>
+            <aura:set attribute="else">
+                Image URL missing! 🙄
+            </aura:set>
+        </aura:if>
+    </div>
+    <br/>
+    <br/>
+</aura:component>	
