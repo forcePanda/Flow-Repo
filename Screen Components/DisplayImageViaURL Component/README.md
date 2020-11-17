@@ -11,7 +11,5 @@ Use this component to display images via URL on your flow screens.
 
 Related blog post link: <>
 
-Use the following link(s) to install the unmanaged package: 
-
 | Version | Fixes |Package Link	    
 | V 1.0 | | https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000001ZLV6 |
