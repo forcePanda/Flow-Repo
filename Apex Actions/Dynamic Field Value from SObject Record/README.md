@@ -8,7 +8,7 @@ A flow action that enables you to get a value of a field from SObject record by 
 | SObject Record | ✔ |  | SObject record, to get the value from. |
 | SObject API Name | ✔ |  | API name of the SObject. | 
 | Field API Name | ✔ |  | API name of the field.|
-| String Output |  | ✔ | Use this output when field value is of string(picklist, phone, email, url etc. included) type. |
+| String Output |  | ✔ | Use this output when field value is of string(Picklist, MultiPicklist, Phone, Email, Url etc.) type. |
 | Number Output |  | ✔ | Use this output when field value is of Number(Number, Currency etc.) type. |
 | Boolean Output |  | ✔ | Use this output when field value is of Boolean type. |
 | Date Output |  | ✔ | Use this output when field value is of Date type. |
