@@ -1,0 +1,6 @@
+<design:component >
+
+    <design:attribute name="contentDocumentId" label="Content Document Id(CSV file)"/>
+    <design:attribute name="cmdtApiName" label="Custom Metadata API Name"/>
+
+</design:component>

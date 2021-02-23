@@ -1,0 +1,59 @@
+<aura:component controller="CSVToCMDTRecordsController" implements="lightning:availableForFlowScreens">
+
+    <aura:attribute name="contentDocumentId" type="String" />
+    <aura:attribute name="cmdtApiName" type="String" />
+
+    <aura:attribute name="eventName" type="String" default="/event/MetadataDeploymentResult__e"/>
+    <aura:attribute name="eventPayload" type="String" />
+    
+    <aura:attribute name="subscription" type="Map" />
+
+    <aura:attribute name="status" type="String" description="Values: reading_csv, deployment_in_progress, success and failed" />
+    <aura:attribute name="jobId" type="String" />
+
+    <lightning:empApi aura:id="empApi"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.init}"/>
+
+    <div>
+        <lightning:card >
+            <aura:set attribute="title">
+                <lightning:icon iconName="standard:business_hours" size="small"/>
+                Deployment Status
+                <hr style="border: 0; margin:0.5rem; height: 3px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(131 197 255), rgba(0, 0, 0, 0));"/>
+            </aura:set>
+
+            <!-- Card body-->
+                <div>
+                    <span><strong>Deploy Request Job ID:</strong> {!v.jobId}</span><br/><br/>
+                    <span><strong>Status:</strong> {!v.status} </span>
+                    <span style="position:relative; padding-inline: 1rem">
+                        <aura:if isTrue="{! v.status == 'reading_csv' || v.status == 'deployment_in_progress'}">
+                            <lightning:spinner alternativeText="{!v.status}" variant="brand" size="small"/>
+                        </aura:if>
+                        <aura:if isTrue="{! v.status == 'success'}">
+                            <lightning:icon iconName="utility:success" variant="success" size="small"/>
+                        </aura:if>
+                        <aura:if isTrue="{! v.status == 'failed'}">
+                            <lightning:icon iconName="utility:error" variant="error" size="small"/>
+                        </aura:if>
+                    </span>
+                </div>
+
+                <br/><br/>
+                
+                <!-- Event Payload Output-->
+                <aura:if isTrue="{! not(empty(v.eventPayload))}">
+                    <div class="slds-form-element">
+                        <label class="slds-form-element__label" for="textarea-id-01"><strong>Event Payload</strong></label>
+                        <div class="slds-form-element__control">
+                            <textarea id="textarea-id-01" rows="20" cols="75" class="slds-textarea">
+                                {!v.eventPayload}
+                            </textarea>
+                        </div>
+                    </div>
+                </aura:if>
+        </lightning:card>
+    </div>
+
+</aura:component>	

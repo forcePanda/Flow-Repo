@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used to pass the Apex test named, CSVToCMDTRecordsControllerTest, successfully. 
+It can be deleted after the installation of the package and you can update the &apos;cmdtApiName&apos; with API name of your CMDT type in the CSVToCMDTRecordsControllerTest Apex class.</description>
+    <label>DummyCMDT Type</label>
+    <pluralLabel>DummyCMDT Types</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
