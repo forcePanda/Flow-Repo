@@ -13,7 +13,7 @@ A flow screen component that allows you to create/update Custom Metadata records
 | Content Document Id(CSV file) | ✔ |  | Id of the CSV file that is saved as the ContentDocument |
 | Custom Metadata API Name | ✔ |  | API name of the Custom Metadata Type |
 
-For more details about the component, refer this blog post: <Blogpost link>
+For more details about the component, refer this blog post: https://forcepanda.wordpress.com/2021/02/23/flow-screen-component-create-custom-metadata-type-records-using-csv-and-flow/
 
 Use the following link(s) to install the unmanaged package: 
 
