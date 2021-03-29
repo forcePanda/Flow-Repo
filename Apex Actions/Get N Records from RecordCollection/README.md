@@ -8,7 +8,9 @@ A flow apex action to get first N records from a collection of records.
 | Input Records Collection | ✔ |  | Input records collection |
 | Output Records Collection |  | ✔ | Output records collection |
 
+
 For more details about the component, refer this blog post: //ToDo
+
 
 Use the following link(s) to install the unmanaged package: 
 
