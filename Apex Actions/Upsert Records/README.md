@@ -5,7 +5,6 @@ An apex action that enables you to upsert a record in a Flow.
 ### Input/Output(s) for component
 |Parameter	               |Use for Input	   |Use for Output	   |Description 
 |-|-|-|-|
-|  | ✔ |  |  |
 | Record | ✔ |  | Record to upsert |
 | Object API Name | ✔ |  | API name of the SObject |
 | External Id Field(API name) | ✔ |  | API name of the field marked as External Id. |
