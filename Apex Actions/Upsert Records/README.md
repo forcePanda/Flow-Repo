@@ -1,5 +1,5 @@
 # Flow Action: Upsert Records
-An apex action that enables you to upsert record in a Flow.
+An apex action that enables you to upsert a record in a Flow.
 
 
 ### Input/Output(s) for component
