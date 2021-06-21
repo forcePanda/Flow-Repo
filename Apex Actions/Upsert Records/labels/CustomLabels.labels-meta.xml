@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>FlowAction_UpsertRecords_ExternalFieldName</fullName>
+        <categories>FlowAction_UpsertRecords</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FlowAction_UpsertRecords_ExternalFieldName</shortDescription>
+        <value>IsTestDummyExternalField__c</value>
+    </labels>
+</CustomLabels>
