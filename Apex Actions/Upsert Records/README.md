@@ -15,8 +15,8 @@ An apex action that enables you to upsert a record in a Flow.
 | Error(s) |  | ✔ | Errors that occurred when upsert failed |
 
 ### Post Installation Notes
-The package contains a field called IsTestDummyExternalField__c on Account object along with custom Label FlowAction_UpsertRecords_ExternalFieldName. These are required for the successful Apex test run during installation.\
-However, if you don't want to keep this additional field, you can delete this field and update the 'value' of FlowAction_UpsertRecords_ExternalFieldName label with the API name of any of your field which is marked as External ID field on Account object.\
+The package contains a field called `IsTestDummyExternalField__c` on Account object along with custom Label `FlowAction_UpsertRecords_ExternalFieldName`. These are required for the successful Apex test run during installation.\
+However, if you don't want to keep this additional field, you can delete this field and update the 'value' of `FlowAction_UpsertRecords_ExternalFieldName` label with the API name of any of your field which is marked as External ID field on Account object.\
 NOTE: The field should be on Account object because the test class includes upsert an Account record.
 
 ### Unmanaged package link(s): 
