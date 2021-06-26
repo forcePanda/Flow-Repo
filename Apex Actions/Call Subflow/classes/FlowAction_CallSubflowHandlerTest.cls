@@ -13,6 +13,12 @@ public class FlowAction_CallSubflowHandlerTest {
         FlowAction_CallSubflowHandler.FlowInput[] inputs = new FlowAction_CallSubflowHandler.FlowInput[]{};
         FlowAction_CallSubflowHandler.FlowInput input = new FlowAction_CallSubflowHandler.FlowInput();
         input.flowApiName = flowApiName;
+        input.inputVariablesRecordVar = 'varText';
+        input.inputVariablesRecord = new Account();
+        input.inputVariablesStringVar = 'varText';
+        input.inputVariablesString = 'test value';
+        input.inputVariablesNumberVar = 'varNumber';
+        input.inputVariablesNumber = 120;
         input.inputVariablesJSON = JSON.serialize(inputVariablesMap);
         inputs.add(input);
 
