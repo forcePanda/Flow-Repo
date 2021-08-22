@@ -43,7 +43,13 @@ public class CSVToCMDTRecordsController implements Metadata.DeployCallback {
 
             Map<String,String> fieldToValueMap = new Map<String,String>();
             
-            String[] fieldInputValues = row.split(',');
+            /* Use of -1 on the split limit forces multiple trailing empty strings to still be split out.
+              For example, consider the input string:
+              Apple,Banana,,, 
+              
+              This will only split into 2 values with 0 (the default limit), but will split into 4 values with the -1. 
+              This would be common if you have optional fields at the end of your rows. */            
+            String[] fieldInputValues = row.split(',', -1);
             
             for (Integer i = 0; i < fieldsList.size(); i++) {
                 fieldToValueMap.put(fieldsList[i],fieldInputValues[i]);
