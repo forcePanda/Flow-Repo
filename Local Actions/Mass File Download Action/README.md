@@ -4,6 +4,7 @@ A flow action to facilitate downloading of files(as a zip) for the given IDs.
 
 Related blogpost:
 
+### Input/Output(s) for component
 |Parameter	               |Use for Input	   |Use for Output	   |Description 
 |-|-|-|-|
 | Content Document IDs | ✔ |  | A list of Content Document IDs to download. |
