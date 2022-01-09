@@ -1,0 +1,6 @@
+<aura:component implements="lightning:availableForFlowActions" controller="MassFileDownloaderController" access="global">
+
+    <aura:attribute name="contentDocumentIds" type="String[]"/>
+    <aura:attribute name="basePath" type="String" default="/sfc/servlet.shepherd/version/download"/>
+
+</aura:component>
