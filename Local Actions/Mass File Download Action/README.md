@@ -2,7 +2,7 @@
 
 A flow action to facilitate downloading of files(as a zip) for the given IDs.
 
-Related blogpost:
+Related blogpost: https://forcepanda.wordpress.com/2022/01/11/salesforce-mass-file-downloader/
 
 ### Input/Output(s) for component
 |Parameter	               |Use for Input	   |Use for Output	   |Description 
