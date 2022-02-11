@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Dependent Picklist with RecordType</masterLabel>
+    <targets>
+        <target>lightning__HomePage</target>
+        <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__FlowScreen">
+            <property name="controllingField" label="Controlling Field" type="String" role="inputOnly" required="true"/>
+            <property name="dependentField" label="Dependent Field" type="String" role="inputOnly"  required="true"/>
+            <property name="objectApiName" label="Object Name" type="String" role="inputOnly" required="true"/>
+            <property name="userDefaultRecordTypeId" label="Default RecordType Id" type="String" role="inputOnly"/>
+            <property name="hideRecordTypeInput" label="Hide RecordType Input" type="Boolean" role="inputOnly"/>
+            <property name="disableRecordTypeSelection" label="Disable RecordType Selection" type="Boolean" role="inputOnly" />
+
+            <property name="controllingFieldValue" label="Controlling Field Value" type="String" role="outputOnly"/>
+            <property name="dependentFieldValue" label="Dependent Field Value" type="String" role="outputOnly"/>
+            <property name="recordTypeId" label="Selected RecordType Id" type="String" role="outputOnly" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

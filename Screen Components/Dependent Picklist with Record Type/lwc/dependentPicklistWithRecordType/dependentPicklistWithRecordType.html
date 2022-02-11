@@ -1,0 +1,26 @@
+<template>
+
+    <template if:true={objectInfo}>
+        <lightning-record-edit-form
+            object-api-name={objectApiName}
+            record-type-id={recordTypeId}
+        >
+            <!-- RecordType Input -->
+            <template if:true={showRecordTypeInput}>
+                <lightning-combobox
+                    name="select-record-type"
+                    label="RecordType"
+                    value={defaultRecordTypeId}
+                    placeholder="Select Record Type"
+                    options={recordTypesList}
+                    disabled={disableRecordTypeSelection}
+                    onchange={handleRTChange} 
+                ></lightning-combobox>
+            </template>
+
+            <!-- Picklists Input -->
+            <lightning-input-field variant="label-stacked" field-name={controllingField} onchange={handleControllingPicklistChange}></lightning-input-field>
+            <lightning-input-field variant="label-stacked" field-name={dependentField} onchange={handleDependentPicklistChange}></lightning-input-field>
+        </lightning-record-edit-form>
+    </template>
+</template>
