@@ -21,6 +21,7 @@ Related blog post: <TODO>
 
 | Version | Fixes |Package Link*	    
 |-|-|-|
+| 1.1 | Picklist refresh issue | https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000004PCUHQA4 |
 | 1.0 | Base version | https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000004PCSuQAO |
 
 *To install the package in sandbox, replace login.salesforce.com with test.salesforce.com.

@@ -14,6 +14,7 @@ export default class DependentPicklistWithRecordType extends LightningElement {
     @api recordTypeId;
 
     objectInfo;
+    showPicklists = true;
 
     @wire(getObjectInfo, { objectApiName: '$objectApiName' })
     handleObjectInfoWire({error, data}) {
@@ -43,7 +44,9 @@ export default class DependentPicklistWithRecordType extends LightningElement {
     }
 
     handleRTChange(event) {
+        this.showPicklists = false;
         this.recordTypeId = event.detail.value;
+        setTimeout(() => {this.showPicklists = true});
     }
     
     handleControllingPicklistChange(event) {
