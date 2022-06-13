@@ -25,10 +25,10 @@ true, "true",
 false, "false",
 NULL)
 ```
-Then the Additional AND Filters input will be:
+Then the Additional AND Filters input will be:\
 FormulaField__c = true
 
-If you want to use multiple fields as additional filters, you can separate them by a semicolon(;). For example:
+If you want to use multiple fields as additional filters, you can separate them by a semicolon(;). For example:\
 Rating = Cold; Checkbox__c = true; Active__c='Yes'
 
 NOTE: This is working as designed because checking the field type in the code would significantly impace the performance of this Apex action.
