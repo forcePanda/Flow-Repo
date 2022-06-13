@@ -2,7 +2,7 @@
 # IN Clause Flow Apex action v2
 A flow apex action that allow you to do an IN clause query with an additional support of adding additional query filters which querying the records. 
 
-### Input/Output(s) for action
+## Input/Output(s) for action
 |Parameter	               |Use for Input	   |Use for Output	   |Description 
 |-|-|-|-|
 | Object API Name | ✔ |  | Object API Name |
@@ -37,6 +37,7 @@ If you're filtering based on the IDs collection, make sure the IDs are 18 digits
 
 <br/>
 
+## Installation
 Use the following link(s) to install the unmanaged(unlocked) package: 
 
 | Version | Fixes |Package Link*	    
