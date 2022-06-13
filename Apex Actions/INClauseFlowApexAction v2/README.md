@@ -2,8 +2,6 @@
 # IN Clause Flow Apex action v2
 A flow apex action that allow you to do an IN clause query with an additional support of adding additional query filters which querying the records. 
 
-<br/>
-
 ### Input/Output(s) for action
 |Parameter	               |Use for Input	   |Use for Output	   |Description 
 |-|-|-|-|
@@ -18,7 +16,7 @@ A flow apex action that allow you to do an IN clause query with an additional su
 
 ## Usage Considerations:
 
-1\. For **Additional AND Filters** input
+1\. For **Additional AND Filters** input \n
 If you want to use a checkbox or number field in the additional filters, you'll have to create a formula field that converts the field value to text type. For example:
 Formula field for Checkbox field:
 ```
@@ -32,12 +30,12 @@ FormulaField__c = true
 
 NOTE: This is working as designed because checking the field type in the code would significantly impace the performance of this Apex action.
 
-<br/><br/>
+<br/>
 
-2\. For **Filter Values Text collection** input
+2\. For **Filter Values Text collection** input \n
 If you're filtering based on the IDs collection, make sure the IDs are 18 digits and not 15 digits. 
 
-<br/><br/>
+<br/>
 
 Use the following link(s) to install the unmanaged(unlocked) package: 
 
