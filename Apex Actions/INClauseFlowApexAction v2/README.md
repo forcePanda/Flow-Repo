@@ -17,8 +17,7 @@ A flow apex action that allow you to do an IN clause query with an additional su
 ## Usage Considerations:
 
 1\. For **Additional AND Filters** input \
-If you want to use a checkbox or number field in the additional filters, you'll have to create a formula field that converts the field value to text type. For example:
-Formula field for Checkbox field:
+If you want to use a checkbox or number field in the additional filters, you'll have to create a formula field that converts the field value to text type. For example, Formula field for Checkbox field:
 ```
 CASE(Checkbox__c,
 true, "true",
