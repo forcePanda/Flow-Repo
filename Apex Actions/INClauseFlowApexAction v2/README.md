@@ -16,7 +16,7 @@ A flow apex action that allow you to do an IN clause query with an additional su
 
 ## Usage Considerations:
 
-1\. For **Additional AND Filters** input \n
+1\. For **Additional AND Filters** input \
 If you want to use a checkbox or number field in the additional filters, you'll have to create a formula field that converts the field value to text type. For example:
 Formula field for Checkbox field:
 ```
@@ -32,7 +32,7 @@ NOTE: This is working as designed because checking the field type in the code wo
 
 <br/>
 
-2\. For **Filter Values Text collection** input \n
+2\. For **Filter Values Text collection** input \
 If you're filtering based on the IDs collection, make sure the IDs are 18 digits and not 15 digits. 
 
 <br/>
