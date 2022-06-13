@@ -14,7 +14,7 @@ A flow apex action that allow you to do an IN clause query with an additional su
 
 <br/>
 
-## Usage Considerations:
+## Usage Guidelines:
 
 1\. For **Additional AND Filters** input \
 If you want to use a checkbox or number field in the additional filters, you'll have to create a formula field that converts the field value to text type. For example, Formula field for Checkbox field:
@@ -25,10 +25,10 @@ false, "false",
 NULL)
 ```
 Then the Additional AND Filters input will be:\
-FormulaField__c = true
+FormulaCheckbox__c = true
 
 If you want to use multiple fields as additional filters, you can separate them by a semicolon(;). For example:\
-Rating = Cold; Checkbox__c = true; Active__c='Yes'
+Rating = Cold; FormulaCheckbox__c = true; Active__c='Yes'
 
 NOTE: This is working as designed because checking the field type in the code would significantly impace the performance of this Apex action.
 
