@@ -4,7 +4,9 @@ import { getObjectInfo } from 'lightning/uiObjectInfoApi';
 export default class DependentPicklistWithRecordType extends LightningElement {
 
     @api controllingField;
+    @api controllingFieldRequired;
     @api dependentField;
+    @api dependentFieldRequired;
     @api userDefaultRecordTypeId;
     @api objectApiName='Account';
     @api disableRecordTypeSelection;
@@ -72,6 +74,7 @@ export default class DependentPicklistWithRecordType extends LightningElement {
             let rtInfo = rtInfoList[rt];
             rtInfo.master || !rtInfo.available || rtList.push(this.getRecordTypeOption(rtInfo));
         });
+
         return rtList;
     }
 
@@ -89,4 +92,20 @@ export default class DependentPicklistWithRecordType extends LightningElement {
     get showRecordTypeInput() {
         return this.recordTypeId && !this.hideRecordTypeInput;
     }
+    @api
+    validate() {
+    	//If the component is invalid, return the isValid parameter as false and return an error message.
+        console.log("validating" + ": ", "entering validate: required=" + this.controllingFieldRequired + " value=" + this.controllingFieldValue);
+        let errorMessage = "You must make a selection in this field to continue";
+
+        if ( (this.controllingFieldRequired && !this.controllingFieldValue) || (this.dependentFieldRequired && !this.dependentFieldValue) ) {
+            return {
+                isValid: false,
+                errorMessage: errorMessage
+            };
+        }
+        return { isValid: true };
+        
+    } 
+
 }
