@@ -9,8 +9,10 @@
     </targets>
     <targetConfigs>
         <targetConfig targets="lightning__FlowScreen">
-            <property name="controllingField" label="Controlling Field" type="String" role="inputOnly" required="true"/>
+            <property name="controllingField" label="Controlling Field" type="String" role="inputOnly" required="true" />
+            <property name="controllingFieldRequired" label="Controlling Field Required" type="Boolean" role="inputOnly" required="true" default="false"/>
             <property name="dependentField" label="Dependent Field" type="String" role="inputOnly"  required="true"/>
+            <property name="dependentFieldRequired" label="Dependent Field Required" type="Boolean" role="inputOnly"  required="true" default="false"/>
             <property name="objectApiName" label="Object Name" type="String" role="inputOnly" required="true"/>
             <property name="userDefaultRecordTypeId" label="Default RecordType Id" type="String" role="inputOnly"/>
             <property name="hideRecordTypeInput" label="Hide RecordType Input" type="Boolean" role="inputOnly"/>
