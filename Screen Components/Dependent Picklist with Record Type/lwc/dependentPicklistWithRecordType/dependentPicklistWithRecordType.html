@@ -21,8 +21,8 @@
 
             <!-- Picklists Input -->
             <template if:true={showPicklists}>
-                <lightning-input-field variant="label-stacked" field-name={controllingField} onchange={handleControllingPicklistChange}></lightning-input-field>
-                <lightning-input-field variant="label-stacked" field-name={dependentField} onchange={handleDependentPicklistChange}></lightning-input-field>
+                <lightning-input-field variant="label-stacked" field-name={controllingField} onchange={handleControllingPicklistChange} required={controllingFieldRequired}></lightning-input-field>
+                <lightning-input-field variant="label-stacked" field-name={dependentField} onchange={handleDependentPicklistChange} required={dependentFieldRequired}></lightning-input-field>
             </template>
             
         </lightning-record-edit-form>
