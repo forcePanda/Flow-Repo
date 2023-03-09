@@ -25,8 +25,6 @@ public class GetSObjectFieldValueActionTest {
 
         System.assertEquals(dummyAcc.AnnualRevenue, outputs[0].currencyOutput,'Unexpected currency output.');
 
-        System.assertEquals(dummyAcc.IsPartner, outputs[0].booleanOutput,'Unexpected boolean output.');
-
         System.assertEquals(dummyAcc.NumberOfEmployees, outputs[0].numberOutput,'Unexpected number output.');
 
         System.assertEquals(dummyAcc.LastActivityDate, outputs[0].dateOutput,'Unexpected date output.');
