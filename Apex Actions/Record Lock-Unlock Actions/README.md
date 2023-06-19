@@ -10,7 +10,7 @@ This utility comes with 2 actions; Lock Record and Unlock Record, which you can 
 | Message |  | ✔ | String type output containing a message indicating if the record was successfully locked/unlocked.|
 
 
-For more details about the component, refer this blog post: <TODO>
+For more details about the component, refer this blog post: https://forcepanda.wordpress.com/2023/06/20/lock-and-unlock-records-in-salesforce-using-flows/
 
 Use the following link(s) to install the unmanaged package: 
 
@@ -18,4 +18,9 @@ Use the following link(s) to install the unmanaged package:
 |-|-|-|	    
 | 1.0 |  | https://login.salesforce.com/packaging/installPackage.apexp?p0=0Ho6F000000KzFvSAK |
 
+
 *To install the package in sandbox, replace login.salesforce.com with test.salesforce.com.
+
+### Post Installation Step
+
+Go to Setup –> Process Automation Settings –> Enable “Enable record locking and unlocking in Apex” checkbox.
