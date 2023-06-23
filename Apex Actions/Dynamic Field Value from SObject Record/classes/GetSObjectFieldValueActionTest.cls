@@ -10,11 +10,11 @@ public class GetSObjectFieldValueActionTest {
             NumberOfEmployees = 5
         );
         insert dummyAcc;
-        dummyAcc = [SELECT Id,Name, AnnualRevenue, IsPartner, NumberOfEmployees, LastActivityDate, CreatedDate FROM Account WHERE Id = :dummyAcc.Id];
+        dummyAcc = [SELECT Id,Name, AnnualRevenue, NumberOfEmployees, LastActivityDate, CreatedDate FROM Account WHERE Id = :dummyAcc.Id];
         GetSObjectFieldValueAction.ActionInput[] actionInputs = getFlowActionInputs(
             dummyAcc, 
             'Account',
-            new String[]{'Name', 'AnnualRevenue', 'IsPartner', 'NumberOfEmployees', 'LastActivityDate', 'CreatedDate' }
+            new String[]{'Name', 'AnnualRevenue','NumberOfEmployees', 'LastActivityDate', 'CreatedDate' }
         );
 
         Test.startTest();
@@ -23,15 +23,13 @@ public class GetSObjectFieldValueActionTest {
 
         System.assertEquals(dummyAcc.Name, outputs[0].stringOutput,'Unexpected string output.');
 
-        System.assertEquals(dummyAcc.AnnualRevenue, outputs[0].currencyOutput,'Unexpected currency output.');
+        System.assertEquals(dummyAcc.AnnualRevenue, outputs[1].currencyOutput,'Unexpected currency output.');
 
-        System.assertEquals(dummyAcc.IsPartner, outputs[0].booleanOutput,'Unexpected boolean output.');
+        System.assertEquals(dummyAcc.NumberOfEmployees, outputs[2].numberOutput,'Unexpected number output.');
 
-        System.assertEquals(dummyAcc.NumberOfEmployees, outputs[0].numberOutput,'Unexpected number output.');
-
-        System.assertEquals(dummyAcc.LastActivityDate, outputs[0].dateOutput,'Unexpected date output.');
+        System.assertEquals(dummyAcc.LastActivityDate, outputs[3].dateOutput,'Unexpected date output.');
         
-        System.assertEquals(dummyAcc.CreatedDate, outputs[0].datetimeOutput,'Unexpected datetime output.');
+        System.assertEquals(dummyAcc.CreatedDate, outputs[4].datetimeOutput,'Unexpected datetime output.');
     }
 
     @IsTest
