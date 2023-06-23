@@ -22,3 +22,4 @@ Use the following link(s) to install the unmanaged package:
 | Version | Fixes |Package Link
 |-|-|-|	    
 | 1.0 |  | https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000001ZLhp |
+| 1.0 | converted to unlocked package, fixed the Partner Community field reference | https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000003uO1BQAU
