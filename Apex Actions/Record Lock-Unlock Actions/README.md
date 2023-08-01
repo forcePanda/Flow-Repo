@@ -16,7 +16,7 @@ Use the following link(s) to install the unmanaged package:
 
 | Version | Fixes |Package Link*
 |-|-|-|	    
-| 1.0 |  | https://login.salesforce.com/packaging/installPackage.apexp?p0=0Ho6F000000KzFvSAK |
+| 1.0 |  | https://login.salesforce.com/packaging/installPackage.apexp?p0=04t6F000003uO0wQAE |
 
 
 *To install the package in sandbox, replace login.salesforce.com with test.salesforce.com.
